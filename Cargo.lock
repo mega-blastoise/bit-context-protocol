@@ -196,6 +196,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "bcp-wasm"
+version = "0.1.0"
+dependencies = [
+ "bcp-decoder",
+ "bcp-driver",
+ "bcp-encoder",
+ "bcp-types",
+ "serde",
+ "serde_json",
+ "wasm-bindgen",
+ "zstd",
+]
+
+[[package]]
 name = "bcp-wire"
 version = "0.1.0"
 dependencies = [

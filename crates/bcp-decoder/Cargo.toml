@@ -3,11 +3,15 @@ name = "bcp-decoder"
 version = "0.1.0"
 edition = "2024"
 
+[features]
+default = ["streaming"]
+streaming = ["dep:tokio"]
+
 [dependencies]
 bcp-wire = { path = "../bcp-wire" }
 bcp-types = { path = "../bcp-types" }
 thiserror = { workspace = true }
-tokio = { workspace = true }
+tokio = { workspace = true, optional = true }
 zstd = { workspace = true }
 
 [dev-dependencies]

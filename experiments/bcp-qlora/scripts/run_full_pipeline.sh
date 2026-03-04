@@ -37,10 +37,10 @@ bash scripts/clone_repos.sh
 echo ""
 echo "=== Step 2: Generate training data (via Ollama) ==="
 echo "This sends code through BCP render → Qwen3 Coder generates responses."
-echo "Estimated time: 2-3 hours for 5,000 examples (local, no API cost)."
 python -m src.generate_data \
     --config configs/generation.yaml \
-    --output data/raw/
+    --output data/raw/ \
+    --limit 1250
 
 echo ""
 echo "=== Step 3: Prepare HuggingFace datasets ==="
