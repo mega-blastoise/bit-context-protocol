@@ -8,7 +8,10 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "rootDir": ".",
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
@@ -19,5 +22,6 @@
     "noUnusedParameters": true,
     "types": ["bun"]
   },
-  "include": ["src/**/*.ts", "test/**/*.ts"]
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "exclude": ["node_modules"]
 }
