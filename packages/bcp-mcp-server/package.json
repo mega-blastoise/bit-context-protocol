@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mega-blastoise/bit-context-protocol.git",
+    "url": "git+https://github.com/mega-blastoise/bit-context-protocol.git",
     "directory": "packages/bcp-mcp-server"
   },
   "homepage": "https://github.com/mega-blastoise/bit-context-protocol/tree/main/packages/bcp-mcp-server",
@@ -20,10 +20,17 @@
       "url": "https://github.com/mega-blastoise"
     }
   ],
-  "keywords": ["mcp", "bcp", "context", "model-context-protocol", "ai", "bun"],
+  "keywords": [
+    "mcp",
+    "bcp",
+    "context",
+    "model-context-protocol",
+    "ai",
+    "bun"
+  ],
   "bin": {
-    "bcp-mcp-server": "./dist/bcp-mcp-server.bun.js",
-    "bun-bcp-mcp-server": "./bin/bcp-mcp-server.ts"
+    "bcp-mcp-server": "dist/bcp-mcp-server.bun.js",
+    "bun-bcp-mcp-server": "bin/bcp-mcp-server.ts"
   },
   "exports": {
     ".": {

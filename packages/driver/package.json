@@ -1,7 +1,7 @@
 {
   "name": "@bit-context-protocol/driver",
-  "version": "0.1.0-draft.0",
-  "description": "",
+  "version": "0.1.0-alpha.0",
+  "description": "TypeScript driver for the Bit Context Protocol — encode, decode, and stream BCP data",
   "type": "module",
   "exports": {
     ".": {
@@ -27,11 +27,11 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
-    "tag": "draft"
+    "tag": "alpha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mega-blastoise/bit-context-protocol.git",
+    "url": "git+https://github.com/mega-blastoise/bit-context-protocol.git",
     "directory": "packages/driver"
   },
   "homepage": "https://github.com/mega-blastoise/bit-context-protocol/tree/main/packages/driver",
